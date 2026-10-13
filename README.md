@@ -1,10 +1,6 @@
 # CHFM
 
-This directory contains the implementation of CHFM for continual learning with
-T5. It includes the Householder adapter, feature-memory loss, accuracy-based
-evaluation, task configurations, and training scripts. Ablation variants,
-visualization code, parameter-orthogonality loss, and ROUGE evaluation are not
-included.
+This directory contains the implementation of CHFM for continual learning.
 
 ## Run
 
@@ -14,14 +10,12 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-Run task order 1 on GPU 4 with seed 42:
+Train Order1:
 
 ```bash
-./run_order1_seed42_gpu4.sh /path/to/t5-large
+bash scripts/order_1.sh
 ```
 
-The script expects the continual-learning benchmark at `../CL_Benchmark` by
-default. Set `DATA_DIR` to override this location.
 
 ## Acknowledgements
 
